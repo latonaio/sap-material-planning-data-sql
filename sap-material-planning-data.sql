@@ -32,6 +32,6 @@ CREATE TABLE `sap-material-planning-data`
     `MRPElementBusinessPartner` varchar(10) DEFAULT NULL,
     `MRPElementIsPartiallyDelivered` varchar(1) DEFAULT NULL,
     `MRPElementIsReleased`  varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`MRPElement`, `MRPElementItem`),
+    PRIMARY KEY (`MRPElement`, `MRPElementItem`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

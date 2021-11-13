@@ -11,7 +11,9 @@ https://api.sap.com/api/OP_API_MRP_MATERIALS_SRV_01_0001/overview
 
 ## sqlの設定ファイル
 
-sap-material-planning-data-sql には、sqlの設定ファイルとして、sap-material-planning-data.sqlが含まれています。
+sap-material-planning-data-sql には、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
+
+* sap-material-planning-data.sql（SAP MRPデータ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 

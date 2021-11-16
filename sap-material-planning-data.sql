@@ -1,8 +1,9 @@
 CREATE TABLE `sap-material-planning-data`
 (
+    `MRPElementDocumentType` varchar(2) DEFAULT NULL,
     `Material`              varchar(40) DEFAULT NULL,
-    `MRPArea`               varchar(10) DEFAULT NULL,
     `MRPPlant`              varchar(4) DEFAULT NULL,
+    `MRPArea`               varchar(10) DEFAULT NULL,
     `MRPPlanningSegment`    varchar(20) DEFAULT NULL,
     `MRPPlanningSegmentType` varchar(2) DEFAULT NULL,
     `MRPElement`            varchar(12) DEFAULT NULL,
@@ -32,6 +33,6 @@ CREATE TABLE `sap-material-planning-data`
     `MRPElementBusinessPartner` varchar(10) DEFAULT NULL,
     `MRPElementIsPartiallyDelivered` varchar(1) DEFAULT NULL,
     `MRPElementIsReleased`  varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`MRPElement`, `MRPElementItem`)
+    PRIMARY KEY (`MRPElementDocumentType`, `Material`, `MRPPlant`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

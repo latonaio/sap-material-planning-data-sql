@@ -1,8 +1,8 @@
 CREATE TABLE `sap-material-planning-data`
 (
-    `MRPElementDocumentType` varchar(2) DEFAULT NULL,
-    `Material`              varchar(40) DEFAULT NULL,
-    `MRPPlant`              varchar(4) DEFAULT NULL,
+    `MRPElementDocumentType` varchar(2) NOT NULL,
+    `Material`              varchar(40) NOT NULL,
+    `MRPPlant`              varchar(4) NOT NULL,
     `MRPArea`               varchar(10) DEFAULT NULL,
     `MRPPlanningSegment`    varchar(20) DEFAULT NULL,
     `MRPPlanningSegmentType` varchar(2) DEFAULT NULL,

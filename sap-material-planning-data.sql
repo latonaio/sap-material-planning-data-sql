@@ -1,4 +1,4 @@
-CREATE TABLE `sap-material-planning-data`
+CREATE TABLE `sap_material_planning_data`
 (
     `MRPElementDocumentType` varchar(2) NOT NULL,
     `Material`              varchar(40) NOT NULL,
@@ -16,16 +16,16 @@ CREATE TABLE `sap-material-planning-data`
     `MRPSafetyDuration`     varchar(3) DEFAULT NULL,
     `DaysOfSupplyDuration`  varchar(3) DEFAULT NULL,
     `MaterialBaseUnit`      varchar(3) DEFAULT NULL,
-    `MRPElementAvailyOrRqmtDate` date DEFAULT NULL,
-    `MRPSafetyDurationEndDate` date DEFAULT NULL,
+    `MRPElementAvailyOrRqmtDate` varchar(80) DEFAULT NULL,
+    `MRPSafetyDurationEndDate` varchar(80) DEFAULT NULL,
     `ProductionVersion`     varchar(4) DEFAULT NULL,
     `StorageLocation`       varchar(4) DEFAULT NULL,
     `ExceptionMessageNumber` varchar(2) DEFAULT NULL,
     `ExceptionMessageNumber2` varchar(2) DEFAULT NULL,
     `MRPAvailableQuantity`  varchar(13) DEFAULT NULL,
     `MaterialShortageQuantity` varchar(13) DEFAULT NULL,
-    `MaterialShortageEndDate` date DEFAULT NULL,
-    `MaterialShortageStartDate` date DEFAULT NULL,
+    `MaterialShortageEndDate` varchar(80) DEFAULT NULL,
+    `MaterialShortageStartDate` varchar(80) DEFAULT NULL,
     `MRPElementOpenQuantity` varchar(13) DEFAULT NULL,
     `MRPElementQuantityIsFirm` tinyint(1) DEFAULT NULL,
     `MaterialSafetyStockQty` varchar(13) DEFAULT NULL,
